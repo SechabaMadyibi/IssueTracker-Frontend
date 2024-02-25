@@ -37,7 +37,7 @@ if (apiProxyTarget) {
 }
 
 if (!process.env.UI_API_ENDPOINT) {
-  process.env.UI_API_ENDPOINT = 'https://issue-tracker-backend-1.onrender.com/';
+  process.env.UI_API_ENDPOINT = 'https://issue-tracker-backend-1.onrender.com/graphql';
 }
 
 if (!process.env.UI_SERVER_API_ENDPOINT) {
