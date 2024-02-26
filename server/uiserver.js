@@ -11,7 +11,7 @@ SourceMapSupport.install();
 dotenv.config();
 const enableHMR = (process.env.ENABLE_HMR || 'true') === 'true';
 
-if (enableHMR && (process.env.NODE_ENV !== 'production')) {
+if (enableHMR && (process.env.NODE_ENV == 'production')) {
   console.log('Adding dev middlware, enabling HMR');
   /* eslint "global-require": "off" */
   /* eslint "import/no-extraneous-dependencies": "off" */
