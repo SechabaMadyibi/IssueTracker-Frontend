@@ -3,7 +3,7 @@ const nodeExternals = require('webpack-node-externals');
 const webpack = require('webpack');
 
 const browserConfig = {
-  mode: 'production',
+  mode: 'development',
   entry: { app: ['./browser/App.jsx'] },
   output: {
     filename: '[name].bundle.js',
@@ -50,7 +50,7 @@ const browserConfig = {
 };
 
 const serverConfig = {
-  mode: 'production',
+  mode: 'development',
   entry: { server: ['./server/uiserver.js'] },
   target: 'node',
   externals: [nodeExternals()],
